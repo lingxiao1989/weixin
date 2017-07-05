@@ -102,3 +102,10 @@ readme也是github上面的，都不需要。
 如果demo对你有帮助的话，帮忙点个star。
 
 ```
+
+
+## 谢谢同学们支持
+
+你们的支持是我坚持下去的动力
+
+![image](https://github.com/songhaoreact/vue-music/blob/master/static/weixin.png)
