@@ -9,13 +9,18 @@
           <image class="more-img" src="/images/icon/arrow-right.png"></image>
         </view>
       </view>
-      <scroll-view class="movies-container" scroll-x="true">
-      <block wx:for="{{movies}}" wx:for-item="movie" wx:key="index">    
-        <template is="movieTemplate" data="{{...movie}}"/>
-      </block>
-        <!--<template is="movieTemplate" />
-        <template is="movieTemplate" />-->
-      </scroll-view>
+      
+        <view class="movies-container">
+            <scroll-view scroll-x style="width: 100%">
+              <block wx:for="{{movies}}" wx:for-item="movie">
+                
+                <template is="movieTemplate" data="{{...movie}}"/>
+              </block>
+            </scroll-view>
+          <!--<template is="movieTemplate" />
+          <template is="movieTemplate" />-->
+        </view>
+
     </view>
   </view>
 </template>
