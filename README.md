@@ -97,15 +97,6 @@ readme也是github上面的，都不需要。
 
 运行前删掉screenshots和readme.md文件就行。
 
-项目来自慕课网实战,api采用豆瓣公共api接口。
-
-如果demo对你有帮助的话，帮忙点个star。
 
 ```
 
-
-## 谢谢同学们支持
-
-你们的支持是我坚持下去的动力
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/weixin.png)
