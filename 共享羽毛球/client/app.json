@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/findTeam/findTeam",
+    "pages/teamProfile/teamProfile",    
+    "pages/logs/logs",
+    "pages/createTeam/createTeam",
+    "pages/userProfile/userProfile"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+
+    "color": "#000000",
+    "selectedColor": "#fb9f3e",
+    "borderStyle": "white",
+    "list": [
+      
+      {
+        "selectedIconPath":"common/image/search_on.png",
+        "iconPath": "common/image/search.png",
+        "pagePath": "pages/findTeam/findTeam",
+        "text": "寻找队伍"
+      },
+      {
+        "selectedIconPath": "common/image/bulb_on.png",
+        "iconPath": "common/image/bulb_off.png",
+        "pagePath": "pages/createTeam/createTeam",
+        "text": "创建队伍"
+      },
+      {
+        "selectedIconPath": "common/image/user_on.png",
+        "iconPath": "common/image/user.png",
+        "pagePath": "pages/userProfile/userProfile",
+        "text": "个人信息"
+      },
+      {
+        "selectedIconPath": "common/image/team_on.png",
+        "iconPath": "common/image/team.png",
+        "pagePath": "pages/teamProfile/teamProfile",
+        "text": "队伍信息"
+      }
+    ]
+  }
+}

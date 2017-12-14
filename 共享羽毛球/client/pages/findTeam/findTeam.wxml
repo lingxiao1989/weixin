@@ -1,0 +1,38 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<!--pages/findTeam/findTeam.wxml-->
+<view class="container">
+  <view class="page-body">
+    
+
+    <view class="weui-search-bar" style="background:#fb9f3e">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="16" color="#fb9f3e" bindtap="searchInput"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜素地址" value="{{inputValue}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" bindconfirm="searchInput"/>
+          <view class="weui-icon-clear" wx:if="{{inputValue.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="16" color="#fb9f3e"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <map id="teamMap"
+      style="width: 100%; height: 95%;"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      markers="{{markers}}"
+      bindmarkertap="markertap"
+      bindcallouttap="callouttap"
+      controls="{{controls}}"
+      bindcontroltap="controltap"
+      circles="{{circles}}"
+      show-location
+      >
+    </map>
+
+
+  </view>
+</view>

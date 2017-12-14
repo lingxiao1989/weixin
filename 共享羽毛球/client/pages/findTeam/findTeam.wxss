@@ -1,0 +1,5 @@
+/* pages/findTeam/findTeam.wxss */
+.page-body {
+  height:100vh;
+  overflow-y: hidden;
+}

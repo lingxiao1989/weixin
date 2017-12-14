@@ -1,0 +1,32 @@
+{
+	"description": "项目配置文件。",
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+  "client": "./client",
+  "svr": "./server",
+  "miniprogramRoot": "./client",
+  "qcloudRoot": "./server",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+	"appid": "wxa3af9fbbfa50832e",
+	"projectname": "%E5%85%B1%E4%BA%AB%E7%BE%BD%E6%AF%9B%E7%90%83",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}
