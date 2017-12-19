@@ -36,6 +36,7 @@ App({
   globalData: {
     targetTeamID: "",
     targetUserID: "",
-    userInfo: null
+    userInfo: null,
+    hasUserInfo: false
   }
 })

@@ -1,5 +1,5 @@
 // pages/findTeam/findTeam.js
-var QQMapWX = require('../../common/libs/qqmap-wx-jssdk.js');
+var QQMapWX = require('../../common/lib/qqmap-wx-jssdk.js');
 var qqmapsdk;
 const app = getApp()
 
@@ -9,6 +9,8 @@ Page({
    */
 
   data: {
+    userInfo:null,
+    hasUserInfo: false,
     pageWidth: "",
     pageHeight: "",
     latitude: "",
@@ -46,8 +48,13 @@ Page({
         //设置map高度，根据当前设备宽高满屏显示
         _this.setData({
           pageWidth: res.windowWidth,
-          pageHeight: res.windowHeight
+          pageHeight: res.windowHeight,
+          userInfo: app.globalData.userInfo,
+          hasUserInfo: app.globalData.hasUserInfo
         })
+      },
+      fail: function(){
+        _this.onLoad();
       }
     }),
 
@@ -60,6 +67,16 @@ Page({
           longitude: res.longitude, 
           controls: [{
             id: 1,
+            iconPath: '../../common/image/myself.png',
+            position: {
+              left: _this.data.pageWidth * 0.05,
+              top: _this.data.pageHeight * 0.05,
+              width: 55,
+              height: 55
+            },
+            clickable: true
+          },{
+            id: 2,
             iconPath: '../../common/image/my_location.png',
             position: {
               left: _this.data.pageWidth * 0.85,
@@ -69,21 +86,11 @@ Page({
             },
             clickable: true
           },{
-            id: 2,
-            iconPath: '../../common/image/myself.png',
-            position: {
-              left: _this.data.pageWidth * 0.05,
-              top: _this.data.pageHeight * 0.05,
-              width: 55,
-              height: 55
-            },
-            clickable: true
-            },{
               id: 3,
               iconPath: '../../common/image/createTeam.png',
               position: {
                 left: _this.data.pageWidth * 0.85,
-                top: _this.data.pageHeight * 0.15,
+                top: _this.data.pageHeight * 0.05+45+10,
                 width: 45,
                 height: 45
               },
@@ -99,6 +106,9 @@ Page({
     qqmapsdk = new QQMapWX({
       key: 'UUHBZ-5KLRP-P5PDS-LVOQK-B2J3Z-DMFHQ'
     });
+
+
+
   },
 
   /**
@@ -190,9 +200,6 @@ Page({
     // console.log(e.controlId)
     switch (e.controlId){
       case 1:
-        this.mapCtx.moveToLocation()
-        break;
-      case 2:
         wx.switchTab({
           url: '../userProfile/userProfile',
           success: function (e) {
@@ -201,6 +208,9 @@ Page({
             page.onLoad();
           }
         })
+        break;
+      case 2:
+        this.mapCtx.moveToLocation()
         break;
       case 3:
         wx.switchTab({

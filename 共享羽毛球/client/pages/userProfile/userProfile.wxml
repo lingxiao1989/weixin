@@ -1,2 +1,50 @@
 <!--pages/userProfile/userProfile.wxml-->
-<text>pages/userProfile/userProfile.wxml</text>
+
+<import src="../stars/stars-template.wxml" />
+<view class="container" class="hidden {{visible?'visible':''}}">
+  <image class="head-img" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+  <view class="head-img-hover" data-src="{{userInfo.avatarUrl}}" catchtap="viewMoviePostImg">
+    <text class="main-title">{{userInfo.nickName}}</text>
+    <text class="sub-title">{{"昵称: "+movie.year}}</text>
+
+  </view>
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" data-src="{{userInfo.avatarUrl}}" catchtap="viewMoviePostImg"/>
+  <view class="summary">
+    <view class="original-title">
+      <text>{{movie.originalTitle}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">星级</text>
+      <template is="starsTemplate" data="{{stars:[1, 1, 1, 1, 0], score:5}}" />
+    </view>
+    <view class="flex-row">
+      <text class="mark">水平</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{movie.generes}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">详细信息</text>
+    <text class="summary-content">{{movie.summary}}</text>
+  </view>
+  <view class="synopsis">
+    <text class="synopsis-font">账户设置</text>
+    <text class="summary-content">{{movie.summary}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="cast">
+    <text class="cast-font"> 所在队伍</text>
+    <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
+      <block wx:for="{{movie.castsInfo}}" wx:for-item="item" wx:key="index">
+        <view class="cast-container">
+          <image class="cast-img" src="{{item.img}}"></image>
+          <text class="cast-name">{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

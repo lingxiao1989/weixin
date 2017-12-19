@@ -1,5 +1,5 @@
 /**app.wxss**/
-@import "/common/weui.wxss";
+@import "/common/lib/weui.wxss";
 /* reset */
 page {
   background-color: #F8F8F8;
@@ -102,11 +102,6 @@ form{
   color: #1aad19;
   font-size: 0;
 }
-.icon-foot{
-  width: 152rpx;
-  height: 23rpx;
-}
-
 .page-section{
   width: 100%;
   margin-bottom: 60rpx;

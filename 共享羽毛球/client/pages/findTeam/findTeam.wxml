@@ -6,7 +6,8 @@
   <view class="page-body">
     
 
-    <view class="weui-search-bar" style="background:#fb9f3e">
+
+    <view class="weui-search-bar" style="background:#fb9f3e; border:none;">
       <view class="weui-search-bar__form">
         <view class="weui-search-bar__box">
           <icon class="weui-icon-search_in-box" type="search" size="16" color="#fb9f3e" bindtap="searchInput"></icon>
@@ -17,7 +18,6 @@
         </view>
       </view>
     </view>
-
 
     <map id="teamMap"
       style="width: 100%; height: 95%;"

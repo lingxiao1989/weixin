@@ -1,27 +1,35 @@
 // pages/userProfile/userProfile.js
+var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    userInfo:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var _this=this;
+    _this.setData({
+      userInfo: app.globalData.userInfo
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    console.log(this.data.userInfo);
   },
 
+  viewMoviePostImg: function(e){
+    console.log(e);
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,5 +1,14 @@
 /* pages/findTeam/findTeam.wxss */
 .page-body {
+  background: #fb9f3e;
   height:100vh;
   overflow-y: hidden;
+}
+
+.container {
+  background: #fb9f3e;
+  align-items: stretch;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }

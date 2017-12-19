@@ -9,8 +9,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FFFFFF",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#fb9f3e",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
