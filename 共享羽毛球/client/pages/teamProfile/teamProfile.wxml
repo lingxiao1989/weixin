@@ -5,7 +5,7 @@
       <view class="weui-search-bar__form">
         <view class="weui-search-bar__box">
           <icon class="weui-icon-search_in-box" type="search" size="16" color="#fb9f3e" bindtap="searchInput"></icon>
-          <input type="text" class="weui-search-bar__input" placeholder="队伍搜素" value="{{inputValue}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" bindconfirm="searchInput"/>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索队伍" placeholder-style="color:#000;" value="{{inputValue}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" bindconfirm="searchInput"/>
           <view class="weui-icon-clear" wx:if="{{inputValue.length > 0}}" bindtap="clearInput">
             <icon type="clear" size="16" color="#fb9f3e"></icon>
           </view>

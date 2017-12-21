@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo:null
+    userInfo:null,
+    teamInfo:[]
   },
 
   /**
@@ -16,7 +17,24 @@ Page({
   onLoad: function (options) {
     var _this=this;
     _this.setData({
-      userInfo: app.globalData.userInfo
+      userInfo: app.globalData.userInfo,
+      teamInfo: [{
+        teamID:1,
+        teamImage:"../../common/image/team_on.png",
+        teamName:"神仙打架，不服就干",
+        teamBrief:"街上",
+        rating :[1,1,1,1,1],
+        score:5,
+        members:100
+      },{
+        teamID: 2,
+        teamImage:"../../common/image/myself.png",
+        teamName: "作死队",
+        teamBrief: "市政府屋顶",
+        rating: [1, 1, 1, 1, 1],
+        score: 5,
+        members:3
+      }]
     })
   },
 

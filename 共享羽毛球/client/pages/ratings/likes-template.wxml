@@ -1,0 +1,11 @@
+<template name="likesTemplate">
+  <view class="ratings-container">
+    <view class="ratings">
+      <block wx:for="{{ratings}}" wx:for-item="i" wx:key="index">
+        <image wx:if="{{i}}" src="../../common/image/like.png"></image>
+        <image wx:else src="../../common/image/none_like.png"></image>
+      </block>
+    </view>
+    <text class="rating-score">{{score}}</text>
+  </view>
+</template>

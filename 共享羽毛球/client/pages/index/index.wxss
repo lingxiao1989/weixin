@@ -52,7 +52,7 @@ page{
   text-align-last: center;
   top: 18%;
   color: #000;
-  font-size: 30px;
+  font-size: 25pt;
   opacity: 0;
   animation: show 2.5s cubic-bezier(0.19, 0.5, 0.22, 1) 0s forwards;
 }
@@ -61,7 +61,7 @@ page{
   text-align-last: center;
   top: 14%;
   color: #000;
-  font-size: 30px;
+  font-size: 25pt;
 }
 
 .welcome-text{
@@ -150,13 +150,15 @@ page{
   font-size: 13pt;
   line-height: 85rpx;
   height: 85rpx;
-  background: #fb9f3e;
+  background: #000;
   text-align: center;
   border-radius: 5px;
-  margin: 50rpx 3%;
+  margin: 50rpx 20%;
 }
 .confirm-text{
-    color: #000;
+    color: #fb9f3e;
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 .icon-foot{

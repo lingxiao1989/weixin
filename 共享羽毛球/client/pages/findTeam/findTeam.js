@@ -86,15 +86,15 @@ Page({
             },
             clickable: true
           },{
-              id: 3,
-              iconPath: '../../common/image/createTeam.png',
-              position: {
-                left: _this.data.pageWidth * 0.85,
-                top: _this.data.pageHeight * 0.05+45+10,
-                width: 45,
-                height: 45
-              },
-              clickable: true
+            id: 3,
+            iconPath: '../../common/image/createTeam.png',
+            position: {
+              left: _this.data.pageWidth * 0.85,
+              top: _this.data.pageHeight * 0.05+45+10,
+              width: 45,
+              height: 45
+            },
+            clickable: true
             }
           ]
         })
@@ -183,7 +183,7 @@ Page({
   },
 
   markertap(e) {
-    console.log(e.markerId)
+    console.log(e.markerId);
   },
   callouttap(e) {
     app.globalData.targetTeamID = e.markerId;
@@ -197,7 +197,7 @@ Page({
     })
   },
   controltap(e) {
-    // console.log(e.controlId)
+    //console.log(e.controlId);
     switch (e.controlId){
       case 1:
         wx.switchTab({

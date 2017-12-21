@@ -1,35 +1,55 @@
 <!--pages/createTeam/createTeam.wxml-->
-<text>pages/createTeam/createTeam.wxml</text>
+
 <view class="container">
-  <template is="head" data="{{title: 'textarea'}}"/>
 
-  <view class="page-body">
-    <view class="page-section">
-      <view class="page-section-title">输入区域高度自适应，不会出现滚动条</view>
-      <view class="textarea-wrp">
-        <textarea bindblur="bindTextAreaBlur" auto-height />
+  <view class="page-section head-block" >
+    <view class="page-section-title">填写基本信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <label class="input-title-label">队伍名称</label>
+        <input class="weui-input" auto-focus />
       </view>
-    </view>
 
-    <view class="page-section">
-      <view class="page-section-title">这是一个可以自动聚焦的textarea</view>
-      <view class="textarea-wrp">
-        <textarea auto-focus="true" style="height: 3em" />
+      <view class="weui-cell " style="padding-bottom:0;padding-top:10rpx;">
+        <label class="input-title-label" style="padding-top:0;padding-bottom:5rpx;">活动地点</label>
+        <input class="weui-input" disabled="true" />
+        <view class="" style="position: absolute;margin-right: 10px;right:5rpx">  
+          <image class="teamPositionSelector" src="../../common/image/badminton.png" style="width:80rpx;height:80rpx;" catchtap="teamPositionSelectorTap"/>
+        </view>
       </view>
+
     </view>
   </view>
 
-  <template is="foot" />
+  <view class="page-section">
+    <view class="page-section-title">添加队伍详情</view>
+    <view class="weui-cells weui-cells_after-title" >
+
+      <view class="weui-cell weui-cell__hd" style="padding-bottom:5rpx;">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10rpx;">  
+          <image class="teamPictureUploader" src="../../common/image/add.png" data-src="{{userInfo.avatarUrl}}" catchtap="teamPictureUploaderTap"/>
+        </view>
+        <label class="weui-cell__bd" style="padding-top:0;padding-bottom:5rpx;">队伍头像</label>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <label class="input-title-label">队伍简述</label>
+        <input class="weui-input" auto-focus/>
+      </view>
+    </view>  
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="input-title-label">更多设置</view>  
+        <view class="navigator-arrow"></view>
+      </view>
+    </view>
+  </view>
+  <view class="button-area">
+    <button class= "confirm-btn" bindtap="bindViewTap">
+      <text  class="confirm-text" >创建队伍</text>
+      <icon class="weui-icon-search_in-box" type="setting" size="16" color="#fff"></icon>
+    </button>
+  </view>
 </view>
-
-          <input type="text" class="weui-search-bar__input" placeholder="队伍名" value="{{inputValue}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" bindconfirm="searchInput"/>
-
-                    <input type="text" class="weui-search-bar__input" placeholder="活动地址" value="{{inputValue}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" bindconfirm="searchInput"/>
-
-队伍简述
-队伍头像
-
-邀请队员
-
-
-更多设置

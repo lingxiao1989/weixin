@@ -104,7 +104,7 @@ form{
 }
 .page-section{
   width: 100%;
-  margin-bottom: 60rpx;
+  margin-bottom: 40rpx;
 }
 .page-section_center{
   display: flex;
@@ -123,7 +123,7 @@ form{
   padding: 0 80rpx;
 }
 .page-section-title{
-  font-size: 28rpx;
+  font-size: 14px;
   color: #999999;
   margin-bottom: 10rpx;
   padding-left: 30rpx;
@@ -133,9 +133,7 @@ form{
   padding-left: 0;
   padding-right: 0;
 }
-.page-section-ctn{
 
-}
 
 /* widget */
 .btn-area{

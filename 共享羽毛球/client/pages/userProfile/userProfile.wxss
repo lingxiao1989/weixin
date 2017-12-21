@@ -1,5 +1,5 @@
 /* pages/userProfile/userProfile.wxss */
-@import "../stars/stars-template.wxss";
+@import "../ratings/stars-template.wxss";
 
 .container{
     display:flex;
@@ -62,18 +62,15 @@
     position: absolute;
     top:160rpx;
     right: 30rpx;
-
-  
-  z-index: 2;
-  left: 50%;
-  bottom: 200rpx;
-  width: 160rpx;
-  height: 160rpx;
-  margin-left: -80rpx;
-  border-radius: 160rpx;
-  animation: sway 10s ease-in-out infinite;
-  opacity: .95;
-
+    z-index: 2;
+    left: 50%;
+    bottom: 200rpx;
+    width: 160rpx;
+    height: 160rpx;
+    margin-left: -80rpx;
+    border-radius: 160rpx;
+    animation: sway 10s ease-in-out infinite;
+    opacity: .95;
 }
 
 .summary{
