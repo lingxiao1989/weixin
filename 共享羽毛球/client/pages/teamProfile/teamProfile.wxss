@@ -1,1 +1,8 @@
 /* pages/teamProfile/teamProfile.wxss */
+@import "../ratings/stars-template.wxss";
+@import "../team/team-template.wxss";
+
+.team-list{
+    white-space: nowrap;
+}
+

@@ -20,18 +20,17 @@ Page({
       userInfo: app.globalData.userInfo,
       teamInfo: [{
         teamID:1,
-        teamImage:"../../common/image/team_on.png",
-        teamName:"神仙打架，不服就干",
+        teamImage: "../../common/image/team_on.png",
+        teamName:"热血羽毛球，不服就干！",
         teamBrief:"街上",
-        rating :[1,1,1,1,1],
-        score:5,
+        rating: {ratings: [1, 1, 1, 1, 1], score:5},
         members:100
       },{
         teamID: 2,
-        teamImage:"../../common/image/myself.png",
+        teamImage: app.globalData.userInfo.avatarUrl,
         teamName: "作死队",
         teamBrief: "市政府屋顶",
-        rating: [1, 1, 1, 1, 1],
+        rating: { ratings: [1, 0, 0, 0, 0], score: 1 },
         score: 5,
         members:3
       }]

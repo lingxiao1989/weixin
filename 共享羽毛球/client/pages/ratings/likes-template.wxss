@@ -11,12 +11,13 @@
   margin-top: 6rpx;
 }
 
-.ratings image {
+.ratingLikes {
   padding-left: 3rpx;
   height: 25rpx;
   width: 25rpx;
 }
 
 .ratings-score{
-   color: #1f3463;
+   color: #000;
+   font-size:28rpx;
 }

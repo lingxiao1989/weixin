@@ -1,5 +1,6 @@
 /* pages/userProfile/userProfile.wxss */
 @import "../ratings/stars-template.wxss";
+@import "../team/team-template.wxss";
 
 .container{
     display:flex;
@@ -22,18 +23,18 @@
     flex-direction: column;
 }
 
-.main-title{
+.userName{
     font-size: 19px;
-    color:#fff;
-    font-weight:bold;
+    color:#000;
+    font-weight:900;
     margin-top: 50rpx;
     margin-left: 40rpx;
     letter-spacing: 2px;
 }
 
-.sub-title{
+.userNickName{
     font-size: 28rpx;
-    color:#fff;
+    color:#000;
     margin-left: 40rpx;
     margin-top: 30rpx;
 }
@@ -76,7 +77,7 @@
 .summary{
     margin-left:40rpx;
     margin-top: 40rpx;
-    color: #777777;
+    
 }
 
 .original-title{
@@ -92,10 +93,10 @@
     margin-bottom: 10rpx;
 }
 
-.mark{
+.title{
     margin-right: 30rpx;
     white-space:nowrap;
-    color: #999999;
+
 }
 
 .hr{
@@ -130,10 +131,7 @@
     margin-top:50rpx;
 }
 
-.cast-font{
-    color: #999;
-    margin-bottom: 40rpx;
-}
+
 
 .cast-container{
     display:inline-flex;
@@ -156,21 +154,4 @@
 .cast-name{
     margin: 10rpx auto 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

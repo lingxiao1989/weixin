@@ -2,7 +2,7 @@
 <view class="container">
 
 <block wx:if="{{!hasUserInfo && canIUse}}">
-  <text class="title">共享羽毛球小程序</text>
+  <text class="title-text">共享羽毛球小程序</text>
   <text class="welcome-text">欢迎使用！请登录 </text>
   <button class="getUserInfo-button"  open-type="getUserInfo" bindgetuserinfo="getUserInfo"><text style="color:#fb9f3e;font-weight:bold;">使用微信登入</text></button>
 </block>

@@ -22,7 +22,7 @@ Page({
       longitude: 117.201883,
       width: 50,
       height: 50,
-      callout: { content: "队伍名称: 作死队\n场地简述: 市政府屋顶\n人员数量: 3\n                点击查看详细", color: "#ffffff", fontSize: 14, padding: 10, borderRadius: 25, bgColor: "#fb9f3e", display:"BYCLICK"}
+      callout: { content: "队伍名称: 作死队\n场地简述: 市政府屋顶\n人员数量: 3\n                点击查看详细", color: "#000", fontSize: 14, padding: 10, borderRadius: 25, bgColor: "#fb9f3e", display:"BYCLICK"}
     },{
       iconPath: "../../common/image/badminton.png",
       id: 2,
@@ -30,7 +30,7 @@ Page({
       longitude: 117.11994,
       width: 50,
       height: 50,
-      callout: { content: "队伍名称: 神仙打架，不服就干\n场地简述: 街上\n人员数量: 100\n                点击查看详细", color: "#ffffff", fontSize: 14, padding: 10, borderRadius: 25, bgColor: "#fb9f3e", display: "BYCLICK" }
+      callout: { content: "队伍名称: 热血羽毛球，不服就干！\n场地简述: 街上\n人员数量: 100\n                点击查看详细", color: "#000", fontSize: 14, padding: 10, borderRadius: 25, bgColor: "#fb9f3e", display: "BYCLICK" }
     }],
     controls: [],
     circles: [],

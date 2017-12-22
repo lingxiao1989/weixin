@@ -1,13 +1,19 @@
 <import src="../ratings/likes-template.wxml" />
 <template name="teamTemplate">
-  <view class="weui-cell">
-      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-          <image src="{{teamImage}}" style="width: 50px; height: 50px; display: block;border-radius:25px;" bindtap="clickImage"/>  
-      </view>  
-      <view class="weui-cell__bd">
-        <text url="../login/login" >{{teamName}}</text>  
-        <view style="font-size: 13px;color: #888888;">{{teamBrief}}</view>
-        <template is="likesTemplate" data="{{ratings:[1, 1, 1, 1, 1], score: 5}}" />
-      </view>
+    
+  <view class="weui-cell" >
+    <view class="weui-cell__hd" style="position: relative;margin-right: 15px;">  
+      <image src="{{teamImage}}" style="width: 50px; height: 50px; display: block; border-right:5rpx solid #fb9f3e; border-bottom:5rpx solid #fb9f3e;" bindtap="clickImage"/>
+    </view>
+    <view class="weui-cell__bd">
+      <text class="team-title" >{{teamName}}</text>  
+      <view style="font-size: 13px;color: #888888;">{{teamBrief+" · "+members+"人"}}</view>
+
+      <template is="likesTemplate" data="{{ratings:rating.ratings, score: rating.score}}" />
+
+    </view>
+    <view class="navigator-arrow"></view>
   </view>
+
+ 
 </template>

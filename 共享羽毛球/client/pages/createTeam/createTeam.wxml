@@ -33,7 +33,7 @@
       </view>
       <view class="weui-cell weui-cell_input">
         <label class="input-title-label">队伍简述</label>
-        <input class="weui-input" auto-focus/>
+        <input class="weui-input"/>
       </view>
     </view>  
   </view>

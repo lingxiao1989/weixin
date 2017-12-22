@@ -1,18 +1,27 @@
 @import "../ratings/likes-template.wxss";
 
-.movie-container {
-  display: inline-flex;
-  flex-direction: column;
-  padding: 0 22rpx;
-}
-
-.movie-img {
-  width: 200rpx;
-  height: 270rpx;
-  padding-bottom: 20rpx;
-}
-
-.movie-title{
+.team-title{
     margin-bottom: 16rpx;
-    font-size: 24rpx;
+    font-size: 40rpx;
+}
+
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+  flex:1;
+  color: #000;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #000;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
 }

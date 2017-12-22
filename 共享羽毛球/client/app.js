@@ -1,10 +1,15 @@
 //app.js
+var qcloud = require('./vendor/wafer2-client-sdk/index')
+var config = require('./config')
 App({
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    
+    // qcloud setting
+    qcloud.setLoginUrl(config.service.loginUrl)
 
     // 登录
     wx.login({

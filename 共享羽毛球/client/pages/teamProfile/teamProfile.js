@@ -1,5 +1,6 @@
-const app = getApp()
 // pages/teamProfile/teamProfile.js
+const app = getApp()
+
 Page({
 
   /**
@@ -7,37 +8,34 @@ Page({
    */
   data: {
     targetTeamID: "",
-    Teams:[{
-      teamID: 1,
-      teamName: "神仙打架，不服就干",
-      teamSize: 100,
-      teamLocation: "天津滨海高新区华苑产业园鑫茂科技园",
-      locationBrief: "街上",
-      teamMember: [1, 2, 3, 4, 5],
-      teamLeader: 1,
-      teamPicture: ""
-    }, {
-      teamID: 2,
-      teamName: "作死队",
-      teamSize: 3,
-      teamLocation: "天津市政府",
-      locationBrief: "市政府屋顶",
-      teamMember: [1, 2, 3],
-      teamLeader: 1,
-      teamPicture: ""
-    }]
+    teamInfo:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var _this=this;
+    var _this = this;
     _this.setData({
-      targetTeamID: app.globalData.targetTeamID
+      targetTeamID: app.globalData.targetTeamID,
+      teamInfo: [{
+        teamID: 1,
+        teamImage: "../../common/image/team_on.png",
+        teamName: "热血羽毛球，不服就干！",
+        teamBrief: "街上",
+        rating: { ratings: [1, 1, 1, 1, 1], score: 5 },
+        members: 100
+      }, {
+        teamID: 2,
+        teamImage: app.globalData.userInfo.avatarUrl,
+        teamName: "作死队",
+        teamBrief: "市政府屋顶",
+        rating: { ratings: [1, 0, 0, 0, 0], score: 1 },
+        score: 5,
+        members: 3
+      }]
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

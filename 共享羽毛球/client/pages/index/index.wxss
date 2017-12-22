@@ -47,10 +47,10 @@ page{
   border-radius: 5px;
   width: 200px;
 }
-.title{
+.title-text{
   position: relative;
-  text-align-last: center;
-  top: 18%;
+  text-align: center;
+  top: 14%;
   color: #000;
   font-size: 25pt;
   opacity: 0;
@@ -58,7 +58,7 @@ page{
 }
 .title-common-text{
   position: relative;
-  text-align-last: center;
+  text-align: center;
   top: 14%;
   color: #000;
   font-size: 25pt;
